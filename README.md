@@ -1,7 +1,7 @@
 # Gerrit Code Review docker image
 
-The official Gerrit Code Review image with an out-of-the-box setup
-with H2 and DEVELOPMENT account setup.
+The a fork of the Gerrit Code Review image with an out-of-the-box setup
+with H2 and DEVELOPMENT account setup, and built in gitweb support on centos only.
 
 This image is intended to be used AS-IS for training or staging environments.
 It can be used for production as base image and requires customizations to its gerrit.config

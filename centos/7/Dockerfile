@@ -11,7 +11,7 @@ ADD centos/7/entrypoint.sh /
 RUN yum -y install initscripts && \
     yum -y install gitweb && \
     yum -y install java-1.8.0-openjdk && \
-    yum -y install gerrit-3.0.2-1 && \
+    yum -y install gerrit-3.0.3-1 && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
